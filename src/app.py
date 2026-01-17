@@ -16,7 +16,7 @@ def create_app():
     # Đăng ký blueprint trước
     app.register_blueprint(todo_bp)
 
-     # Thêm Swagger UI blueprint
+    # Thêm Swagger UI blueprint
     SWAGGER_URL = '/docs'
     API_URL = '/swagger.json'
     swaggerui_blueprint = get_swaggerui_blueprint(

@@ -1,7 +1,6 @@
 from infrastructure.databases.mssql import init_mssql
-from infrastructure.models import course_register_model, todo_model, user_model, course_model, consultant_model, appointment_model, program_model, feedback_model,survey_model
-
-def init_db(app):
+from infrastructure.models import user_model, medical_info_model, ai_result_model, analysis_model, clinic_model, doctor_model, doctor_note_model, image_model, payment_model, risk_model, subscription_model
+def init_db(app): 
     init_mssql(app)
     
 from infrastructure.databases.mssql import Base
