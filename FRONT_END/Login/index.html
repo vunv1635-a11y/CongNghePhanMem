@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-card">
+            <div class="logo">
+                <img src="assets/images/AURA ICON.png" alt="Logo" />
+            </div>
+
+            <h2>Sign In to Your Account</h2> 
+
+            <form>
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email" />
+
+                <label>Password</label>
+                <div class="password-box">
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter your password"
+                    />
+
+                    <img
+                        src="assets/images/eye_close.png"
+                        alt="Toggle password"
+                        class="eye"
+                        id="togglePassword"
+                    />
+                </div>
+
+                <div class="options">
+                    <label class="remember">
+                        <input type="checkbox" />
+                        Remember me
+                    </label>
+                    <a href="#" class="forgot">Forgot password?</a>
+                </div>
+
+                <button class="btn-primary">Sign In</button>
+
+                <div class="or">OR</div>
+
+                <button class="btn-google">
+                    <img src="https://www.svgrepo.com/show/475656/google-color.svg" />
+                    Continue with Google
+                </button>
+            </form>
+
+            <p class="signup">
+                Don't have an account? <a href="#">Sign up</a>
+            </p>
+        </div>
+    </div>
+    <script>
+        const passwordInput = document.getElementById("password");
+        const toggleIcon = document.getElementById("togglePassword");
+
+        toggleIcon.addEventListener("click", () => {
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                toggleIcon.src = "assets/images/remove_red_eye.png";
+            } else {
+                passwordInput.type = "password";
+                toggleIcon.src = "assets/images/eye_close.png";
+            }
+        });
+    </script>
+</body>
+</html>

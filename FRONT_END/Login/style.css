@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #f2f7ff;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card {
+    background: #fff;
+    width: 400px;
+    padding: 32px;
+    border-radius: 14px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.logo img {
+    width: 125px;
+    height: auto;
+}
+h2 {
+    margin-bottom: 24px;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 6px;
+    display: block;
+    color: #333;
+}
+
+input[type="email"] {
+    width: 100%;
+    height: 44px;
+    padding: 0 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+    margin-bottom: 16px;
+}
+
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    height: 44px;
+    padding: 0 44px 0 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+}
+
+.password-box {
+    position: relative;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.eye {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.eye:hover {
+    opacity: 1;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.forgot {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    background: #2563eb;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: #1e4ed8;
+}
+
+.or {
+    text-align: center;
+    margin: 16px 0;
+    color: #999;
+}
+
+.btn-google {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #2563eb;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.btn-google img {
+    width: 20px;
+}
+
+.signup {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signup a {
+    color: #2563eb;
+    text-decoration: none;
+}
